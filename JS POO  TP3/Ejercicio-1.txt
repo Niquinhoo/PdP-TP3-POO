@@ -1,0 +1,13 @@
+1. Generalización simbólica
+Las reglas escritas del lenguaje JavaScript orientado a objetos basado en prototipos establecen que la herencia se logra mediante prototipos. 
+Los objetos son entidades dinámicas que pueden heredar directamente de otros objetos. 
+Las funciones constructoras sirven como plantillas para crear nuevos objetos, pero en realidad son funciones normales con una propiedad prototype. 
+El modelo de objetos es dinámico: se pueden agregar o quitar propiedades a los objetos o a sus prototipos en tiempo de ejecución. 
+No hay tipado fuerte, y la identidad de los objetos depende de su estructura, no de su tipo declarado. 
+En síntesis, los objetos en JavaScript heredan comportamiento a través de enlaces prototípicos y las funciones son la base de la abstracción y reutilización del código.
+
+2. Creencias de los profesionales
+Los desarrolladores creen que el modelo basado en prototipos ofrece mayor flexibilidad que los lenguajes orientados a clases tradicionales. 
+Se considera más natural, simple y dinámico, permitiendo modificar y extender los objetos durante la ejecución. 
+Se valora su capacidad de reutilización de código sin jerarquías rígidas, su adaptabilidad al entorno web y la unificación entre funciones y objetos. 
+En comparación con lenguajes como Java o C#, se percibe como menos estructurado pero más expresivo y ágil para la creación de aplicaciones dinámicas.

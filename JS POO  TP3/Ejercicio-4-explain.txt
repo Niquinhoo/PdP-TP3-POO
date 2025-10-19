@@ -1,0 +1,34 @@
+Ejecicio 2:
+
+Que usé
+
+Encapsulamiento: Sirve para todo lo que pertenece a la calculadora en un solo lugar
+La funcion Calculadora, la variable resultado y las funciones que manejar el inicio del ciclo estan en un mismo "paquete". Aca lo tome como "caja negra" para que funcione por su cuenta sin que el resto del codigo tenga ver o intervenir en el proceso de calculo 
+
+Abstraccion: Separé las responsabilidades para tener simplicidad
+El main solo sabe que tiene que llamar a la funcion que inicia la calculadora, al main no le importa que tiene dentro de la calculadora o que es lo que suceda dentro
+y dentro de la calculadora uso otra funcion "operar()" repitiendo el mismo proceso
+
+Que no usé
+
+Herencia: no use herencia porque solo tengo un tipo de calculadora, la herencia que sirve para crear familias de objetos me hubiera servido para poder crear una CalculadoraCIentifica por ej, en el que tenga que almacenar más funciones aparte de los operandos "+""-""*""/"
+Polimorfismo: esto va de la mano con la herencia, pero como tengo "un solo tipo de calculadora" que tiene un switch, no lo vi necesario utilizarlo 
+
+Ejercicio 3:
+
+Que usé
+
+Encapsulamiento: 
+    Tarea: El estado de cada tarea es gestionado por la misma tarea, "aislando" el objeto tarea que contiene todos los datos y las operaciones se hacen sobre si misma
+    GestorTareas: La capsula hace su propia logica, ocultando la lista de tareas del resto del codigo. Para meternos en la lista necesitamos que el resto del programa use los metodos(crearTarea, mostrarTareas, bsucarPorEstado) evitando que la lista la modifique de manera involuntaria
+
+Abstraccion:
+    El index solo necesita saber que existe un objeto gestor que puede que crearTarea o mostrarTareas, no tiene que saber que hace cada uno de los procedimientos dentro. Lo unico que hace es llamar a la funcion con el switch y el gestor
+    El GestorTareas es el encargado de distribuir a donde va cada peticion, entonces no se "mete" en el procesamiento de cada tarea
+
+Que no usé
+
+Herencia: no use herencia porque todas mis tareas tienen el mismo formato y tipo de dato, entonces tengo todas las caracteristicas comunes pero con funciones diferentes
+
+Polimorfismo: entonces como no hay herencia, no hay un caso de Polimorfismo. No se me presento la situacion en la que necesite con diferentes tipos de tareas que respondan al mismo metodo
+

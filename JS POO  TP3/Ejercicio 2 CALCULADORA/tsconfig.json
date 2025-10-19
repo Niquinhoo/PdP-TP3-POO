@@ -1,0 +1,21 @@
+// tsconfig.json
+{
+  "compilerOptions": {
+    // --- Configuración de Módulos ---
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+    "target": "ES2022", // Un objetivo de JavaScript moderno
+
+    // --- Ubicación de Archivos (Buena Práctica) ---
+    "outDir": "./dist",      // Guarda los archivos .js compilados en una carpeta 'dist'
+    "rootDir": "./",         // El código fuente está en la raíz del proyecto
+
+    // --- Opciones de Calidad de Código ---
+    "strict": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true
+  },
+  "include": ["**/*.ts"],      // Le dice a TS que compile todos los archivos .ts
+  "exclude": ["node_modules", "dist"] // Ignora estas carpetas
+}
